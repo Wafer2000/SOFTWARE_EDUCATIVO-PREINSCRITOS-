@@ -1,0 +1,210 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-text><h5><strong>EXAMEN</strong></h5></ion-text>
+      <ion-buttons slot="start">
+          <ion-button (click)="openmenu()">
+              <ion-icon color="primary" slot="icon-only" name="menu-sharp"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngFor="let usuariosins of usuario">
+  <div *ngIf="!usuariosins.completado">
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta1 of preguntas1">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp1">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta1.id}}. {{pregunta1.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexam [preguntas]=pregunta1></app-opexam>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta2 of preguntas2">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp2">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta2.id}}. {{pregunta2.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexam [preguntas]=pregunta2></app-opexam>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta3 of preguntas3">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp3">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta3.id}}. {{pregunta3.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexam [preguntas]=pregunta3></app-opexam>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta4 of preguntas4">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp4">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta4.id}}. {{pregunta4.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexam [preguntas]=pregunta4></app-opexam>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta5 of preguntas5">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp5">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta5.id}}. {{pregunta5.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexam [preguntas]=pregunta5></app-opexam>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta6 of preguntas6">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp6">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta6.id}}. {{pregunta6.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexam [preguntas]=pregunta6></app-opexam>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta7 of preguntas7">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp7">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta7.id}}. {{pregunta7.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexam [preguntas]=pregunta7></app-opexam>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta8 of preguntas8">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp8">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta8.id}}. {{pregunta8.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexam [preguntas]=pregunta8></app-opexam>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta9 of preguntas9">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp9">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta9.id}}. {{pregunta9.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexam [preguntas]=pregunta9></app-opexam>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta10 of preguntas10">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp10">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta10.id}}. {{pregunta10.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexam [preguntas]=pregunta10></app-opexam>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-button (click)="GuardarRespuestas(resp1, resp2, resp3, resp4, resp5, resp6, resp7, resp8, resp9, resp10, usuariosins)" shape="round">
+      <ion-icon slot="icon-only" name="save"></ion-icon>
+      Guardar
+    </ion-button>
+  </div>
+  <div *ngIf="usuariosins.completado">
+    <ion-row style="background: #e4e4e4;">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-card-content>
+              YA HAS COMPLETADO EL EXAMEN DE INSCRIPCION, TUS RESULTADOS LLEGARAN A TU CORREO
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
