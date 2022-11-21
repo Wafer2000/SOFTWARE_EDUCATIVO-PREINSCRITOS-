@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">PREINSCRITOS</string>
-    <string name="title_activity_main">PREINSCRITOS</string>
-    <string name="package_name">com.educativo.preinscritos</string>
-    <string name="custom_url_scheme">com.educativo.preinscritos</string>
-</resources>
